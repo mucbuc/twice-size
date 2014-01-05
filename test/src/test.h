@@ -1,6 +1,6 @@
-#include <om636/lib/containers/queue.h>
-#include <om636/lib/containers/pset.h>
-#include <om636/lib/containers/stack.h>
+#include <src/queue.h>
+#include <src/pset.h>
+#include <src/stack.h>
 
 #include <memory>
 #include <cmath>

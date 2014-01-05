@@ -1,7 +1,7 @@
 #include <cassert>
 #define ASSERT( pred ) assert( pred )
 
-#include <om636/lib/containers/stack.h>
+#include <src/stack.h>
 #include <iostream>
 #include <fstream>
 
