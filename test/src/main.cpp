@@ -1,6 +1,3 @@
-#include <cassert>
-#define ASSERT( pred ) assert( pred )
-
 #include <src/stack.h>
 #include <iostream>
 #include <fstream>
