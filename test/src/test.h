@@ -8,6 +8,8 @@
 #include <iostream>
 #include <sstream>
 
+#include "debug.h"
+
 namespace om636
 {
     template<typename T>
