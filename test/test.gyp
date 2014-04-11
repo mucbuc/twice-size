@@ -23,6 +23,7 @@
 							'ARCHS': '$(ARCHS_STANDARD_32_64_BIT)',
 							'CLANG_CXX_LANGUAGE_STANDARD': 'gnu++11',
 							'CLANG_CXX_LIBRARY': 'libc++',
+							'INFOPLIST_FILE': 'test-Info.plist'
 						}
 					}, {
 						'cflags': [
