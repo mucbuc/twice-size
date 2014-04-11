@@ -1,22 +1,26 @@
 {
+	'includes':[
+		'../twice-size.gypi'
+	],
+	'target_defaults': {
+		'sources': [
+			'src/main.cpp'
+		],
+		'include_dirs': [
+			'../'
+		],		
+	},
 	'targets': [
 		{
 			'target_name': 'test', 
 			'type': 'executable',
-			'sources': [
-				'src/main.cpp'
-			],
-			'mac_bundle': 1,
-			'includes':[
-				'../twice-size.gypi'
-			],
-			'include_dirs': [
-				'../'
-			],
+
 			'conditions': [
 				[
 					'OS=="ios"', {
+						'mac_bundle': 1,
 						'xcode_settings': {
+							'SDKROOT': 'iphoneos',
 							'TARGETED_DEVICE_FAMILY': '1,2',
 							'CODE_SIGN_IDENTITY': 'iPhone Developer',
 							'IPHONEOS_DEPLOYMENT_TARGET': '5.0',
@@ -25,23 +29,9 @@
 							'CLANG_CXX_LIBRARY': 'libc++',
 							'INFOPLIST_FILE': 'test-Info.plist'
 						}
-					}, {
-						'cflags': [
-							'-std=c++11', '-stdlib=libc++'
-						]
-					}		
+					}
 				]
-			],
+			]
         }
 	],
-	'conditions': [
-		[
-			'OS=="ios"', {
-				'xcode_settings': {
-					'SDKROOT': 'iphoneos',
-				} # xcode_settings
-			} ],
-		] 
-
-
 }
