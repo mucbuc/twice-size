@@ -6,6 +6,7 @@
 			'sources': [
 				'src/main.cpp'
 			],
+			'mac_bundle': 1,
 			'includes':[
 				'../twice-size.gypi'
 			],
@@ -20,6 +21,8 @@
 							'CODE_SIGN_IDENTITY': 'iPhone Developer',
 							'IPHONEOS_DEPLOYMENT_TARGET': '5.0',
 							'ARCHS': '$(ARCHS_STANDARD_32_64_BIT)',
+							'CLANG_CXX_LANGUAGE_STANDARD': 'gnu++11',
+							'CLANG_CXX_LIBRARY': 'libc++',
 						}
 					}, {
 						'cflags': [
@@ -27,7 +30,7 @@
 						]
 					}		
 				]
-			]
+			],
         }
 	],
 	'conditions': [
