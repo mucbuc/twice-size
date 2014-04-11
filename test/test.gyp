@@ -1,21 +1,30 @@
 {
 	'includes':[
 		'../twice-size.gypi'
-	],
+	],#inclues
 	'target_defaults': {
 		'sources': [
 			'src/main.cpp'
-		],
+		], #sources
 		'include_dirs': [
 			'../'
-		],		
-	},
+		], #include_dirs		
+	}, #target_defaults
 	'targets': [
 		{
 			'target_name': 'test', 
 			'type': 'executable',
 
 			'conditions': [
+				[ 
+					'OS=="mac"', {
+						'xcode_settings': {
+							'OTHER_CFLAGS': [
+								'-std=c++11', '-stdlib=libc++'
+							],
+						}#xcode-settings
+					} #mac
+				],
 				[
 					'OS=="ios"', {
 						'mac_bundle': 1,
@@ -28,10 +37,10 @@
 							'CLANG_CXX_LANGUAGE_STANDARD': 'gnu++11',
 							'CLANG_CXX_LIBRARY': 'libc++',
 							'INFOPLIST_FILE': 'test-Info.plist'
-						}
-					}
-				]
-			]
+						} #xcode_settings
+					} #ios
+				],
+			] #conditions
         }
-	],
+	], #targets
 }
