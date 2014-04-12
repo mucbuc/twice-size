@@ -1,7 +1,6 @@
-#ifndef DEBUG_H_LKJLLKJASDFASDFDSLJ3242
-#define DEBUG_H_LKJLLKJASDFASDFDSLJ3242
+#ifndef DEBUG_H
+#define DEBUG_H
 
-#include <cassert>
-#define ASSERT( p ) assert( p )
+#include <lib/om636/src/core/assert.h>
 
-#endif //DEBUG_H_LKJLLKJASDFASDFDSLJ3242
+#endif //DEBUG_H

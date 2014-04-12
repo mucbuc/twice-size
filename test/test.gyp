@@ -1,6 +1,7 @@
 {
 	'includes':[
-		'../twice-size.gypi'
+		'../twice-size.gypi',
+		'../lib/om636/om636.gypi'
 	],#inclues
 	'target_defaults': {
 		'sources': [
