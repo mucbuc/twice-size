@@ -3,6 +3,9 @@
 		'lib/om636/om636.gypi'
 	],
 	'target_defaults': {
+		'include_dirs': [
+			'.'
+		],
 		'sources': [
 			'src/pset.h',
 			'src/pset.hxx',
