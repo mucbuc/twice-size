@@ -6,6 +6,7 @@
 		'sources': [
 			'src/main.cpp',
 			'src/debug.h',
+			'src/test.h',
 		], #sources
 		'include_dirs': [
 			'../'
