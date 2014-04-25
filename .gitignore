@@ -2,3 +2,4 @@
 .sconsign.dblite
 build_debug/
 *.xcodeproj/
+test/build
