@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var base = require( './.base.js' )
-  , config = require( './config.json' );
+  , config = require( '../config.json' );
 
 generateProject( base.makeEmitter() ); 
 
