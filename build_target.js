@@ -2,7 +2,7 @@
 
 var cp = require( 'child_process' )
   , base = require( './.base.js' )
-  , config = require( './config.json' )
+  , config = require( '../config.json' )
   , generate = cp.fork( 'generate_project' );
 
 generate.on( 'close', function() {

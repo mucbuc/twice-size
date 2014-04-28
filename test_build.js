@@ -2,7 +2,7 @@
 
 var cp = require( 'child_process' )
   , base = require( './.base.js' )
-  , config = require( './config' )
+  , config = require( '../config' )
   , build = cp.fork( 'build_target' );
 
 build.on( 'close', function() {
