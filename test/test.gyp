@@ -1,7 +1,8 @@
 {
 	'includes':[
-		'../twice-size.gypi',
-		'../plank/def/mac-targets.gypi'
+		'lib/twice-size/twice-size.gypi',
+		'plank/def/mac-targets.gypi',
+		'plank/def/cpp11.gypi'
 	],#inclues
 	'target_defaults': {
 		'target_name': 'test',
@@ -11,8 +12,8 @@
 			'../test/src/tests.h'
 		], #sources
 		'include_dirs': [
-			'../plank/src/',
-			'../'
+			'plank/src/',
+			'.'
 		], #include_dirs		
 	}, #target_defaults
 }
