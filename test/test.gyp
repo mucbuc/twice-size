@@ -8,8 +8,8 @@
 		'target_name': 'test',
 		'type': 'executable',
 		'sources': [
-			'../test/src/main.cpp',
-			'../test/src/tests.h'
+			'src/main.cpp',
+			'src/tests.h'
 		], #sources
 		'include_dirs': [
 			'plank/src/',
