@@ -19,8 +19,6 @@
     "graceful-fs": "*",
     "fs-extra": "*",
     "ansi": "*",
-    "commander": "*",
-    "promise": "*",
-    "expector": "*"
+    "commander": "*"
   }
 }
