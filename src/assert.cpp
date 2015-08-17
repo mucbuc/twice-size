@@ -8,7 +8,7 @@
 #ifndef NDEBUG
 
 /////////////////////////////////////////////////////////////////////////////////////////////
-// assereter_t
+// asserter_t
 /////////////////////////////////////////////////////////////////////////////////////////////
 asserter_t::asserter_t(bool value) 
 	: SMART_ASSERT_A( * this )
@@ -69,6 +69,11 @@ asserter_message_out::asserter_message_out(bool value, const char * message)
 const asserter_t & asserter_message_out::print_message(const char * file, int line, const char * function, const char * ) const
 {
     return asserter_t::print_message( file, line, function, m_message ); 
+}
+
+void asserter_t::on_assert_fail()
+{
+    memset((void*)1,0,1);
 }
 
 #endif 

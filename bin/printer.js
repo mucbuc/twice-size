@@ -1,8 +1,9 @@
 var ansi = require( 'ansi' )
-  , cursor = ansi( process.stdout );
+  , cursor = ansi( process.stdout )
+  , summary = '';
 
 var Printer = {
-	
+
 	cursor: cursor, 
 
 	begin: function( msg1, msg2 ) {
@@ -22,6 +23,12 @@ var Printer = {
 	finishRed: function( msg1 ) {
 		cursor.red();
 		console.timeEnd( msg1 );
+		cursor.reset();
+	}, 
+
+	printError: function( msg ) {
+		cursor.red(); 
+		console.log( msg ); 
 		cursor.reset();
 	}
 };

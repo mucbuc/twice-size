@@ -5,9 +5,9 @@
 #ifndef ASSERT_H_9879879hkjh
 #define ASSERT_H_9879879hkjh
 
+#include <cstring>
 #include <iostream>
 #include <stdexcept>
-#include <cstring>
 
 #ifdef NDEBUG
 
@@ -46,7 +46,7 @@
                 local_t( const asserter_t & o ) \
                 {   \
                     if( !o.can_handle() )   \
-                        memset( 0, 0, 1 );  \
+                        asserter_t::on_assert_fail();  \
                 }   \
             } \
             local_obj = \
@@ -71,6 +71,8 @@
         asserter_t & SMART_ASSERT_A; 
         asserter_t & SMART_ASSERT_B; 
         
+        static void on_assert_fail();
+
     protected:
         asserter_t(bool); 
         
