@@ -1,7 +1,6 @@
 {
 	'includes':[
 		'lib/twice-size/twice-size.gypi',
-		'plank/def/mac-targets.gypi',
 		'plank/def/plank.gypi',
 	],#inclues
 	'target_defaults': {
