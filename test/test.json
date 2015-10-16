@@ -1,0 +1,9 @@
+{
+	"import":[
+		"lib/twice-size/twice-size.json"
+	],
+	"sources": [
+		"src/main.cpp",
+		"src/tests.h"
+	]
+}
