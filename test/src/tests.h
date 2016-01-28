@@ -8,7 +8,7 @@
 #include <iostream>
 #include <sstream>
 
-#include "test.h"
+#include <tmp/src/test.h>
 
 namespace om636
 {
