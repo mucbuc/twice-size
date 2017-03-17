@@ -1,0 +1,22 @@
+{
+  "name": "twice-size",
+  "version": "1.0.0",
+  "description": "twice-size ==========",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "crimp test/test.json -g"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mucbuc/twice-size.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mucbuc/twice-size/issues"
+  },
+  "homepage": "https://github.com/mucbuc/twice-size#readme"
+}
