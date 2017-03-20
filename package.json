@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "test": "crimp test.json -g"
+    "test": "crimp test/test.json -g"
   }
 }
