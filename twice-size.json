@@ -1,4 +1,5 @@
-{
+{	
+	"name": "twice-size",
 	"sources": [
 		"src/pset.h",
 		"src/pset.hxx",
